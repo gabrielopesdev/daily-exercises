@@ -5,21 +5,20 @@
 const notas = [100, 50, 20, 10, 5, 2];
 
 function calcNotas(notas, valor) {
-    let resultado = {}; // Objeto para armazenar a quantidade de cada nota
+    let resultado = {};
 
-    // Itera sobre as notas disponíveis
     notas.forEach(nota => {
-        let contador = 0; // Contador de notas para cada valor
+        let contador = 0; 
         while (valor >= nota) {
-            valor -= nota; // Subtrai o valor da nota
-            contador++; // Incrementa o contador para essa nota
+            valor -= nota;
+            contador++;
         }
         if (contador > 0) {
-            resultado[nota] = contador; // Armazena o número de notas de cada valor
+            resultado[nota] = contador;
         }
     });
 
     return resultado;
 }
 
-console.log(calcNotas(notas, 187)); // Exemplo de entrada
+console.log(calcNotas(notas, 10));
