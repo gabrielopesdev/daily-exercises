@@ -30,4 +30,4 @@ function calcIpi(pecas) {
 
 }
 
-console.log(calcIpi(pecas))
+console.log(calcIpi(pecas))  
